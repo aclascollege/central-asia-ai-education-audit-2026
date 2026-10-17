@@ -9,6 +9,9 @@ Uzbekistan, Tajikistan and Turkmenistan**, audited on two questions:
 (b) what AI-related degree programs or courses does it offer?
 
 
+
+> **Also on Kaggle:** [aclascollege/central-asia-ai-education-audit-2026](https://www.kaggle.com/datasets/aclascollege/central-asia-ai-education-audit-2026) — download the CSV without git, or fork it straight into a notebook.
+
 ## In plain English
 
 **What is this?** A report card for 31 leading universities in Kazakhstan,
