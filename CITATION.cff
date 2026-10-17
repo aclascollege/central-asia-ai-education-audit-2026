@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: Online Degree Tuition 2026
+message: If you use this dataset, please cite it as below.
+type: dataset
+authors:
+  - name: Study Intelligence
+    website: https://aclas.si
+version: 1.0.0
+date-released: 2026-10-17
+license: CC-BY-4.0
+url: https://aclas.si/data/online-degree-tuition-2026
+keywords:
+  - tuition
+  - online degrees
+  - higher education
+  - open data
