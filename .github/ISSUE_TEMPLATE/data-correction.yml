@@ -1,0 +1,25 @@
+name: Data correction
+description: Report a wrong or outdated row in the dataset
+labels: [data-correction]
+body:
+  - type: input
+    id: row-id
+    attributes:
+      label: Row id
+      description: The `id` value of the affected row in the CSV
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Current value vs. what it should be
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: Link on the institution's own official domain backing the correction
+    validations:
+      required: true
