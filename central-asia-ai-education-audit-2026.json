@@ -11,7 +11,8 @@
       "has_policy": "YES",
       "policy_url": "https://regulations.nu.edu.kz/handle/123456789/1030?locale=en",
       "policy_url_raw": "https://regulations.nu.edu.kz/handle/123456789/1030?locale=en (accessed 2026-10-17)",
-      "note": "\"NU Response to Generative Artificial Intelligence in Learning and Teaching\", approved by the Learning & Teaching Committee and Academic Council, 2023-10-18. Delegated per-school practices; declaration and best-practice guidance. NU also adopted a UNESCO AI definition in its Student Code of Conduct."
+      "note": "\"NU Response to Generative Artificial Intelligence in Learning and Teaching\", approved by the Learning & Teaching Committee and Academic Council, 2023-10-18. Delegated per-school practices; declaration and best-practice guidance. NU also adopted a UNESCO AI definition in its Student Code of Conduct.",
+      "short_name": "Nazarbayev University"
     },
     {
       "id": "ca-2",
@@ -20,7 +21,8 @@
       "has_policy": "YES",
       "policy_url": "https://farabi.university/students/34",
       "policy_url_raw": "https://farabi.university/storage/files/3002346309671f1a8698ca1298541906_Положение о применении технологий искусственного интеллекта в КазНУ (англ).pdf and https://farabi.university/students/34 (accessed 2026-10-17)",
-      "note": "\"Положение о применении технологий искусственного интеллекта\" (Regulation on the Use of AI Technologies), first edition 2024. Covers all levels of higher and postgraduate education; mandatory disclosure of tool name, version, and stage of use; supervisor and ethics-commission approval; diploma originality threshold (75%) retained alongside regulated AI use."
+      "note": "\"Положение о применении технологий искусственного интеллекта\" (Regulation on the Use of AI Technologies), first edition 2024. Covers all levels of higher and postgraduate education; mandatory disclosure of tool name, version, and stage of use; supervisor and ethics-commission approval; diploma originality threshold (75%) retained alongside regulated AI use.",
+      "short_name": "Al-Farabi Kazakh National University"
     },
     {
       "id": "ca-3",
@@ -29,7 +31,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "AI ethics discussions at institute level (enu.kz news, 2026-09-26); no university-level usage policy located."
+      "note": "AI ethics discussions at institute level (enu.kz news, 2026-09-26); no university-level usage policy located.",
+      "short_name": "L.N. Gumilyov ENU"
     },
     {
       "id": "ca-4",
@@ -38,7 +41,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No university-level AI usage policy located."
+      "note": "No university-level AI usage policy located.",
+      "short_name": "Satbayev University"
     },
     {
       "id": "ca-5",
@@ -47,7 +51,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "A \"Policy on Ethical AI Usage\" PDF was identified on kbtu.edu.kz but the document could not be retrieved for content verification (fetch failed, 2026-10-17). Not counted as YES without content confirmation."
+      "note": "A \"Policy on Ethical AI Usage\" PDF was identified on kbtu.edu.kz but the document could not be retrieved for content verification (fetch failed, 2026-10-17). Not counted as YES without content confirmation.",
+      "short_name": "KBTU"
     },
     {
       "id": "ca-6",
@@ -56,7 +61,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No university-level usage policy located on iitu.edu.kz. Kazakhstan's Ministry of Science and Higher Education has cited IITU as an institution permitting AI-assisted work, but this is secondary-source and does not meet the official-domain standard."
+      "note": "No university-level usage policy located on iitu.edu.kz. Kazakhstan's Ministry of Science and Higher Education has cited IITU as an institution permitting AI-assisted work, but this is secondary-source and does not meet the official-domain standard.",
+      "short_name": "IITU"
     },
     {
       "id": "ca-7",
@@ -65,7 +71,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on astanait.edu.kz."
+      "note": "No usage policy located on astanait.edu.kz.",
+      "short_name": "Astana IT University"
     },
     {
       "id": "ca-8",
@@ -74,7 +81,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on sdu.edu.kz."
+      "note": "No usage policy located on sdu.edu.kz.",
+      "short_name": "SDU"
     },
     {
       "id": "ca-9",
@@ -83,7 +91,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "Founded by presidential order 2025-10-01; licensed 2026-04-29; first intake September 2026. No public student AI-usage policy located on qairu.edu.kz."
+      "note": "Founded by presidential order 2025-10-01; licensed 2026-04-29; first intake September 2026. No public student AI-usage policy located on qairu.edu.kz.",
+      "short_name": "QAIRU"
     },
     {
       "id": "ca-10",
@@ -92,7 +101,8 @@
       "has_policy": "YES",
       "policy_url": "https://tou.edu.kz/arm/storage/science/doc/Положение_2025.pdf.pdf",
       "policy_url_raw": "https://tou.edu.kz/arm/storage/science/doc/Положение_2025.pdf.pdf (accessed 2026-10-17)",
-      "note": "\"Положение о нормах использования искусственного интеллекта при написании диссертационных работ на соискание степени доктора философии (PhD)\". Scope-limited to doctoral research: permitted vs. prohibited uses, mandatory disclosure (tool name, manufacturer, version, date of use), supervisor and ethics-commission approval, personal responsibility for AI-assisted errors. Counted as YES with the scope caveat stated here."
+      "note": "\"Положение о нормах использования искусственного интеллекта при написании диссертационных работ на соискание степени доктора философии (PhD)\". Scope-limited to doctoral research: permitted vs. prohibited uses, mandatory disclosure (tool name, manufacturer, version, date of use), supervisor and ethics-commission approval, personal responsibility for AI-assisted errors. Counted as YES with the scope caveat stated here.",
+      "short_name": "Toraighyrov University"
     },
     {
       "id": "ca-11",
@@ -101,7 +111,8 @@
       "has_policy": "YES",
       "policy_url": "https://orient2020.auca.kg/en/p6050817816/",
       "policy_url_raw": "https://orient2020.auca.kg/en/p6050817816/ (accessed 2026-10-17)",
-      "note": "\"AUCA AI Policy\", approved by the Academic Senate, 2024-01-11. Instructors set per-course AI policies; an AI statement is mandatory in every syllabus. Caveat: currently served from the university's archived orient2020 subdomain; canonical live-page status unconfirmed."
+      "note": "\"AUCA AI Policy\", approved by the Academic Senate, 2024-01-11. Instructors set per-course AI policies; an AI statement is mandatory in every syllabus. Caveat: currently served from the university's archived orient2020 subdomain; canonical live-page status unconfirmed.",
+      "short_name": "AUCA"
     },
     {
       "id": "ca-12",
@@ -110,7 +121,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on knu.kg."
+      "note": "No usage policy located on knu.kg.",
+      "short_name": "Kyrgyz National University (Balasagyn)"
     },
     {
       "id": "ca-13",
@@ -119,7 +131,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "Only a department-level code of ethics (air.kstu.kg) mentions improper AI use; no university-level policy."
+      "note": "Only a department-level code of ethics (air.kstu.kg) mentions improper AI use; no university-level policy.",
+      "short_name": "KSTU (Razzakov)"
     },
     {
       "id": "ca-14",
@@ -128,7 +141,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "Secondary sources report AI degree programs and an NU ISSAI partnership; no official-domain program or policy page could be verified. Excluded as unverifiable per the protocol."
+      "note": "Secondary sources report AI degree programs and an NU ISSAI partnership; no official-domain program or policy page could be verified. Excluded as unverifiable per the protocol.",
+      "short_name": "Ala-Too International University"
     },
     {
       "id": "ca-15",
@@ -137,7 +151,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No university-level policy on manas.edu.kg. Note: Türkiye's Council of Higher Education (YÖK) issued a national \"Ethical Guide for AI Use\" in 2026, which applies at national level in Türkiye but is not a Manas university policy."
+      "note": "No university-level policy on manas.edu.kg. Note: Türkiye's Council of Higher Education (YÖK) issued a national \"Ethical Guide for AI Use\" in 2026, which applies at national level in Türkiye but is not a Manas university policy.",
+      "short_name": "Manas University"
     },
     {
       "id": "ca-16",
@@ -146,7 +161,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "AI activity visible (Institute of Nanotechnology and Artificial Intelligence; AI conferences) but no usage policy located on oshsu.kg."
+      "note": "AI activity visible (Institute of Nanotechnology and Artificial Intelligence; AI conferences) but no usage policy located on oshsu.kg.",
+      "short_name": "Osh State University"
     },
     {
       "id": "ca-17",
@@ -155,7 +171,8 @@
       "has_policy": "YES",
       "policy_url": "https://www.iuca.kg/en/_files/ugd/bc4b82_42a07874d6964af7b9c5d10d127b713f.pdf",
       "policy_url_raw": "https://www.iuca.kg/en/_files/ugd/bc4b82_42a07874d6964af7b9c5d10d127b713f.pdf (accessed 2026-10-17)",
-      "note": "\"Политика по использованию генеративного искусственного интеллекта\", adopted by Academic Council decision. Mandatory acknowledgment of generative AI (e.g., ChatGPT) in any submitted work; instructors may require abstention for specific activities or mandate prompt submission; students bear responsibility for AI-generated errors; appeal route to an Appeals Committee."
+      "note": "\"Политика по использованию генеративного искусственного интеллекта\", adopted by Academic Council decision. Mandatory acknowledgment of generative AI (e.g., ChatGPT) in any submitted work; instructors may require abstention for specific activities or mandate prompt submission; students bear responsibility for AI-generated errors; appeal route to an Appeals Committee.",
+      "short_name": "IUCA (Tokmok)"
     },
     {
       "id": "ca-18",
@@ -164,7 +181,8 @@
       "has_policy": "YES",
       "policy_url": "https://www.wiut.uz/images/Documents%202025/WIUT_AI_Strategy.pdf",
       "policy_url_raw": "https://www.wiut.uz/images/Documents 2025/WIUT_AI_Strategy.pdf (accessed 2026-10-17)",
-      "note": "\"WIUT Artificial Intelligence Strategy\" — an institutional strategy (not a standalone regulation) with substantive teaching/learning/assessment provisions: AI competencies integrated across all programs, assessment redesign for \"authentic and responsible use of AI\", and academic-integrity principles in its core values. Counted as YES with the form caveat stated here."
+      "note": "\"WIUT Artificial Intelligence Strategy\" — an institutional strategy (not a standalone regulation) with substantive teaching/learning/assessment provisions: AI competencies integrated across all programs, assessment redesign for \"authentic and responsible use of AI\", and academic-integrity principles in its core values. Counted as YES with the form caveat stated here.",
+      "short_name": "WIUT"
     },
     {
       "id": "ca-19",
@@ -173,7 +191,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on tuit.uz."
+      "note": "No usage policy located on tuit.uz.",
+      "short_name": "TUIT"
     },
     {
       "id": "ca-20",
@@ -182,7 +201,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on inha.uz."
+      "note": "No usage policy located on inha.uz.",
+      "short_name": "INHA Tashkent"
     },
     {
       "id": "ca-21",
@@ -191,7 +211,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on turin.uz."
+      "note": "No usage policy located on turin.uz.",
+      "short_name": "Turin Polytechnic Tashkent"
     },
     {
       "id": "ca-22",
@@ -200,7 +221,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on nuu.uz."
+      "note": "No usage policy located on nuu.uz.",
+      "short_name": "National University of Uzbekistan"
     },
     {
       "id": "ca-23",
@@ -209,7 +231,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "TSUL operates LexAI, a legal-AI platform, and teaches legal-tech courses; this is institutional technology deployment, not a student AI-usage policy. No usage policy located on tsul.uz."
+      "note": "TSUL operates LexAI, a legal-AI platform, and teaches legal-tech courses; this is institutional technology deployment, not a student AI-usage policy. No usage policy located on tsul.uz.",
+      "short_name": "TSUL"
     },
     {
       "id": "ca-24",
@@ -218,7 +241,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located on samdu.uz."
+      "note": "No usage policy located on samdu.uz.",
+      "short_name": "Samarkand State University"
     },
     {
       "id": "ca-25",
@@ -227,7 +251,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located; limited crawlable official-domain presence."
+      "note": "No usage policy located; limited crawlable official-domain presence.",
+      "short_name": "Tajik National University"
     },
     {
       "id": "ca-26",
@@ -236,7 +261,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy located."
+      "note": "No usage policy located.",
+      "short_name": "Tajik Technical University (Osimi)"
     },
     {
       "id": "ca-27",
@@ -245,7 +271,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No university-level policy located; rtsu.tj commentary discusses GenAI's teaching implications at essay level only."
+      "note": "No university-level policy located; rtsu.tj commentary discusses GenAI's teaching implications at essay level only.",
+      "short_name": "Russian-Tajik Slavonic University"
     },
     {
       "id": "ca-28",
@@ -254,7 +281,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "Closed institutional web; no usage policy locatable."
+      "note": "Closed institutional web; no usage policy locatable.",
+      "short_name": "Magtymguly Turkmen State University"
     },
     {
       "id": "ca-29",
@@ -263,7 +291,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy locatable. IUHD students won a UNESCO AI-ethics competition (Aug 2026, per state media), but this is activity, not policy."
+      "note": "No usage policy locatable. IUHD students won a UNESCO AI-ethics competition (Aug 2026, per state media), but this is activity, not policy.",
+      "short_name": "IUHD"
     },
     {
       "id": "ca-30",
@@ -272,7 +301,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "No usage policy locatable. State media report an Oguz Han–Sungkyunkwan AI cooperation and an \"Artificial Intelligence and Expert Systems\" bachelor's, but neither is verifiable on an official university domain."
+      "note": "No usage policy locatable. State media report an Oguz Han–Sungkyunkwan AI cooperation and an \"Artificial Intelligence and Expert Systems\" bachelor's, but neither is verifiable on an official university domain.",
+      "short_name": "Oguz Han Engineering and Technology University"
     },
     {
       "id": "ca-31",
@@ -281,7 +311,8 @@
       "has_policy": "UNVERIFIABLE",
       "policy_url": null,
       "policy_url_raw": null,
-      "note": "OSCE delivered a responsible-AI lecture to its IT students (Oct 2025); no university-level usage policy locatable."
+      "note": "OSCE delivered a responsible-AI lecture to its IT students (Oct 2025); no university-level usage policy locatable.",
+      "short_name": "Turkmen Institute of Telecommunications and Informatics"
     }
   ],
   "ai_programs": [
@@ -291,7 +322,8 @@
       "ai_programs": "Master of Applied Artificial Intelligence and Data Science; MSc Data Science",
       "source_url": "https://www.nu.edu.kz/sprogram/master-of-applied-artificial-intelligence-and-data-science/",
       "source_url_raw": "https://www.nu.edu.kz/sprogram/master-of-applied-artificial-intelligence-and-data-science/ ; https://www.nu.edu.kz/admissions/programs/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Nazarbayev University"
     },
     {
       "id": "ca-p-2",
@@ -299,7 +331,8 @@
       "ai_programs": "Department of Artificial Intelligence and Big Data (faculty-level AI unit; digital-egiz lab)",
       "source_url": "https://farabi.university/news/107347?lang=ru",
       "source_url_raw": "https://farabi.university/news/107347?lang=ru (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Al-Farabi Kazakh National University"
     },
     {
       "id": "ca-p-3",
@@ -307,7 +340,8 @@
       "ai_programs": "Institute of Digital Sciences and Artificial Intelligence; 72-hour professional course \"Lu Ban Workshop: industrial robotics, AI technologies and drones\" (machine vision, LLM platforms, AI-app development)",
       "source_url": "https://enu.kz/kz/news/7142",
       "source_url_raw": "https://enu.kz/kz/news/7142 (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "L.N. Gumilyov ENU"
     },
     {
       "id": "ca-p-4",
@@ -315,7 +349,8 @@
       "ai_programs": "PhD \"Cybernetics and Artificial Intelligence\" 8D06104; MSc \"Cybernetics and Artificial Intelligence\" 7M06105; Academy of Digital Technologies & AI (opened May 2026)",
       "source_url": "https://official.satbayev.university/download/document/54738",
       "source_url_raw": "https://official.satbayev.university/download/document/54738 (PhD curriculum 8D06104); 7M06105 curriculum (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Satbayev University"
     },
     {
       "id": "ca-p-5",
@@ -323,7 +358,8 @@
       "ai_programs": "BSc \"Data Science and Artificial Intelligence\" 6B06110",
       "source_url": "https://kbtu.kz/en/schools/school-of-information-technology-and-engineering/",
       "source_url_raw": "https://kbtu.kz/en/schools/school-of-information-technology-and-engineering/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "KBTU"
     },
     {
       "id": "ca-p-6",
@@ -331,7 +367,8 @@
       "ai_programs": "BSc \"Artificial Intelligence\" 6B06120; MSc \"Artificial Intelligence\" 7M06114; BSc \"Big Data Analytics\" 6B06103 (ASIIN-accredited); ACAI Lab (Advanced Cognitive and AI research lab, opened 14 Apr 2025); online AI courses for educators",
       "source_url": "https://iitu.edu.kz/documents/4200/",
       "source_url_raw": "https://iitu.edu.kz/documents/4200/ (ASIIN accreditation, accessed 2026-10-17); https://iitu.edu.kz/en/news/…acai-lab (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "IITU"
     },
     {
       "id": "ca-p-7",
@@ -339,7 +376,8 @@
       "ai_programs": "MSc \"Applied Artificial Intelligence\" 7M06108; School of AI and Data Science; MIT IDSS partnership (launched April 2026)",
       "source_url": "https://astanait.edu.kz/Applied-Artificial-Intelligence-masters",
       "source_url_raw": "https://astanait.edu.kz/Applied-Artificial-Intelligence-masters (accessed 2026-10-17); https://idss.mit.edu/news (partnership, accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Astana IT University"
     },
     {
       "id": "ca-p-8",
@@ -347,7 +385,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "SDU"
     },
     {
       "id": "ca-p-9",
@@ -355,7 +394,8 @@
       "ai_programs": "BSc \"Artificial Intelligence and Machine Learning\"; BSc \"Physical AI\"; graduate AI+X programs (5 master's programs); 528 students in first intake (391 bachelor, 32 master, 105 MBA AI+X), Sept 2026",
       "source_url": "https://qairu.edu.kz/en",
       "source_url_raw": "https://qairu.edu.kz/en (accessed 2026-10-17); https://www.gov.kz/memleket/entities/sci/press/news/details/1303382?lang=ru (ministry press release, accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "QAIRU"
     },
     {
       "id": "ca-p-10",
@@ -363,7 +403,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Toraighyrov University"
     },
     {
       "id": "ca-p-11",
@@ -371,7 +412,8 @@
       "ai_programs": "Software Engineering electives: COM-214 Introduction to AI, Machine Learning, Data Science, Computer Vision, Neural Networks",
       "source_url": "https://auca.kg/en/elective_sfw/",
       "source_url_raw": "https://auca.kg/en/elective_sfw/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "AUCA"
     },
     {
       "id": "ca-p-12",
@@ -379,7 +421,8 @@
       "ai_programs": "None verified",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Kyrgyz National University (Balasagyn)"
     },
     {
       "id": "ca-p-13",
@@ -387,7 +430,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "KSTU (Razzakov)"
     },
     {
       "id": "ca-p-14",
@@ -395,7 +439,8 @@
       "ai_programs": "None verified on official domain (secondary reports of \"Artificial Intelligence and Robotics\" and \"Data Analysis and Intelligent Systems\" could not be verified)",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Ala-Too International University"
     },
     {
       "id": "ca-p-15",
@@ -403,7 +448,8 @@
       "ai_programs": "UME-417 Artificial Intelligence & Expert Systems (course); Computer Engineering program",
       "source_url": "https://manas.edu.kg/en/engineering/computer_engineering/1495",
       "source_url_raw": "https://manas.edu.kg/en/engineering/computer_engineering/1495 (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Manas University"
     },
     {
       "id": "ca-p-16",
@@ -411,7 +457,8 @@
       "ai_programs": "Mechatronics & Robotics bachelor's with \"Robotics and AI\" profile",
       "source_url": "https://oshsu.kg/kg/page/42",
       "source_url_raw": "https://oshsu.kg/kg/page/42 (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Osh State University"
     },
     {
       "id": "ca-p-17",
@@ -419,7 +466,8 @@
       "ai_programs": "IT programs (computer science track)",
       "source_url": "https://iuca.kg/en",
       "source_url_raw": "https://iuca.kg/en (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "IUCA (Tokmok)"
     },
     {
       "id": "ca-p-18",
@@ -427,7 +475,8 @@
       "ai_programs": "MSc Business Intelligence and Analytics; BSc Computer Science",
       "source_url": "https://www.wiut.uz/business-intelligence-analytics",
       "source_url_raw": "https://www.wiut.uz/business-intelligence-analytics ; https://www.wiut.uz/bsc-hons-in-computer-science (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "WIUT"
     },
     {
       "id": "ca-p-19",
@@ -435,7 +484,8 @@
       "ai_programs": "Bachelor \"Artificial Intelligence\" (БА 60610700)",
       "source_url": "https://static.tuit.uz/uploads/1/wne8BGjIg7y7BpGpV3YMhNtsG8WAe5sd.pdf",
       "source_url_raw": "https://static.tuit.uz/uploads/1/wne8BGjIg7y7BpGpV3YMhNtsG8WAe5sd.pdf (curriculum doc, accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "TUIT"
     },
     {
       "id": "ca-p-20",
@@ -443,7 +493,8 @@
       "ai_programs": "IT program (UK degree track) with AI, Data Engineering, Cyber Security specializations; EMBA in AI & Data Science",
       "source_url": "https://inha.uz/undergraduate/",
       "source_url_raw": "https://inha.uz/undergraduate/ ; https://inha.uz/emva/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "INHA Tashkent"
     },
     {
       "id": "ca-p-21",
@@ -451,7 +502,8 @@
       "ai_programs": "Control & Computer Engineering department with AI/ML focus; AI projects portfolio",
       "source_url": "https://turin.uz/control-and-computer-engineering/",
       "source_url_raw": "https://turin.uz/control-and-computer-engineering/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Turin Polytechnic Tashkent"
     },
     {
       "id": "ca-p-22",
@@ -459,7 +511,8 @@
       "ai_programs": "Faculty of Applied Mathematics and Intellectual Technologies (\"Software engineering and artificial intelligence\"); master's-level Computer Linguistics (70230801) with NLP/AI coursework",
       "source_url": "https://nuu.uz/faculty/amaliy-matematika-va-intellektual-texnologiyalar/",
       "source_url_raw": "https://nuu.uz/faculty/amaliy-matematika-va-intellektual-texnologiyalar/ ; https://nuu.uz/en/kompyuter-lingvistikasi-va-amaliy-tilshunoslik-kafedrasi/ (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "National University of Uzbekistan"
     },
     {
       "id": "ca-p-23",
@@ -467,7 +520,8 @@
       "ai_programs": "None verified (LexAI is an institutional legal-AI platform, not a degree program)",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "TSUL"
     },
     {
       "id": "ca-p-24",
@@ -475,7 +529,8 @@
       "ai_programs": "Faculty of Artificial Intelligence and Digital Technologies; doctoral specialty 05.01.11 \"Digital technologies and artificial intelligence\"",
       "source_url": "https://www.samdu.uz/uz/news/65308",
       "source_url_raw": "https://www.samdu.uz/uz/news/65308 ; https://www.samdu.uz/uz/news/65113 (accessed 2026-10-17)",
-      "has_ai_programs": true
+      "has_ai_programs": true,
+      "short_name": "Samarkand State University"
     },
     {
       "id": "ca-p-25",
@@ -483,7 +538,8 @@
       "ai_programs": "None verified",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Tajik National University"
     },
     {
       "id": "ca-p-26",
@@ -491,7 +547,8 @@
       "ai_programs": "None verified on official domain (national AI strategy until 2040 references AI specialties at Tajik technical institutions — government document, not university-published)",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Tajik Technical University (Osimi)"
     },
     {
       "id": "ca-p-27",
@@ -499,7 +556,8 @@
       "ai_programs": "None verified",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Russian-Tajik Slavonic University"
     },
     {
       "id": "ca-p-28",
@@ -507,7 +565,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Magtymguly Turkmen State University"
     },
     {
       "id": "ca-p-29",
@@ -515,7 +574,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "IUHD"
     },
     {
       "id": "ca-p-30",
@@ -523,7 +583,8 @@
       "ai_programs": "None verified on official domain (\"Artificial Intelligence and Expert Systems\" bachelor's reported by state media, not verifiable on a university domain)",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Oguz Han Engineering and Technology University"
     },
     {
       "id": "ca-p-31",
@@ -531,7 +592,8 @@
       "ai_programs": "None verified on official domain",
       "source_url": null,
       "source_url_raw": null,
-      "has_ai_programs": false
+      "has_ai_programs": false,
+      "short_name": "Turkmen Institute of Telecommunications and Informatics"
     }
   ]
 }

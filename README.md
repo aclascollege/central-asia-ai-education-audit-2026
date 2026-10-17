@@ -71,13 +71,13 @@ a finding about *transparency*, not just adoption.
 
 ## Columns — policies
 
-`id`, `country_code` (KZ/KG/UZ/TJ/TM), `university`, `has_policy`
+`id`, `country_code` (KZ/KG/UZ/TJ/TM), `university`, `short_name` (join key shared by both tables), `has_policy`
 (`YES`/`UNVERIFIABLE` — no confirmed-NO cases in this sample; unverifiable means
 not found, not proven absent), `policy_url`, `policy_url_raw`, `note`.
 
 ## Columns — programs
 
-`id`, `university`, `has_ai_programs` (`true`/`false` — machine-readable flag;
+`id`, `university`, `short_name` (join key shared by both tables), `has_ai_programs` (`true`/`false` — machine-readable flag;
 13 rows are "None verified"), `ai_programs` (verified AI-named programs/courses),
 `source_url`, `source_url_raw`.
 
