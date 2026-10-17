@@ -48,7 +48,7 @@ a finding about *transparency*, not just adoption.
 ## Headline numbers
 
 - **6 of 31 (19%)** publish a verifiable public AI usage policy on their official
-  domain — 4 of the 6 are Kazakh, backed by a 2024 inter-university AI standard
+  domain — 3 of the 6 are Kazakh, backed by a 2024 inter-university AI standard
   and a 2025 ministry position against AI bans.
 - **18 of 31 (58%)** offer a verifiable AI-named degree program or AI course
   portfolio — institutions are teaching AI ~3× faster than they govern its use.
@@ -67,7 +67,7 @@ a finding about *transparency*, not just adoption.
 | `central-asia-ai-programs-2026.csv` | 31 rows: verified AI programs/courses per university |
 | `central-asia-ai-education-audit-2026.json` | Both tables + metadata |
 | `METHODOLOGY.md` | Sample selection, definitions, caveats |
-| `parse.py` | Exact script that generated CSV/JSON from the raw audit tables |
+| `parse.py` | Script that generated CSV/JSON from the audit tables (source tables not shipped; not independently reproducible from this repo alone) |
 
 ## Columns — policies
 
@@ -77,7 +77,8 @@ not found, not proven absent), `policy_url`, `policy_url_raw`, `note`.
 
 ## Columns — programs
 
-`id`, `university`, `ai_programs` (verified AI-named programs/courses),
+`id`, `university`, `has_ai_programs` (`true`/`false` — machine-readable flag;
+13 rows are "None verified"), `ai_programs` (verified AI-named programs/courses),
 `source_url`, `source_url_raw`.
 
 ## Notes
