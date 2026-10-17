@@ -1,25 +1,16 @@
 #!/usr/bin/env python3
-"""Parse the 187-university AI policy audit markdown tables into CSV + JSON.
-Source: ~/workspace/aclas-report/ai-policy-audit/ (audit date 2026-10-14).
-Run: python3 parse.py  (writes ai-policy-audit-2026.csv / .json next to this file)
+"""Parse the Central Asia AI Education Audit 2026 markdown tables into CSV + JSON.
+Source: ~/workspace/aclas-kg-seo/research/central-asia-ai-education-audit-2026.md
+Run: python3 parse.py
 """
-import csv, json, re, sys
+import csv, json, re
 from pathlib import Path
 
-SRC = Path.home() / "workspace/aclas-report/ai-policy-audit"
+SRC = Path.home() / "workspace/aclas-kg-seo/research/central-asia-ai-education-audit-2026.md"
 OUT = Path(__file__).parent
 
-FILES = [
-    ("qs-001-050.md", "qs_top_50"),
-    ("qs-051-100.md", "qs_51_100"),
-    ("qs-101-150.md", "qs_101_150"),
-    ("global-south-35.md", "global_south"),
-]
-
 def split_row(line: str):
-    # split on unescaped pipes; "\|" inside a cell is a literal pipe
     parts = re.split(r'(?<!\\)\|', line.strip())
-    # drop leading/trailing empty from outer pipes
     if parts and parts[0].strip() == "":
         parts = parts[1:]
     if parts and parts[-1].strip() == "":
@@ -32,155 +23,86 @@ def is_header_or_sep(cells):
     first = cells[0].strip()
     if re.fullmatch(r"[\s\-|:]+", first):
         return True
-    # data rows start with a digit (rank) or '=' (tied rank); headers start with '#', 'Rank', 'QS rank', ...
-    if not re.match(r"^[=\d]", first):
-        return True
-    return False
+    return not re.match(r"^[\d]", first)
 
-def parse_file(fname, sample):
-    rows = []
-    for line in (SRC / fname).read_text(encoding="utf-8").splitlines():
-        if not line.startswith("|"):
-            continue
-        cells = split_row(line)
-        if is_header_or_sep(cells):
-            continue
-        rows.append((sample, cells))
-    return rows
+def first_url(text):
+    if not text:
+        return None
+    m = re.search(r"https?://\S+", text)
+    return m.group(0).rstrip(").,;") if m else None
 
 def norm_policy(v):
-    v = v.strip().upper()
+    v = re.sub(r"\*", "", v).strip().upper()
     if v.startswith("YES"):
         return "YES"
     if v.startswith("NO"):
         return "NO"
-    return "UNCLEAR"
+    return "UNVERIFIABLE"
 
-records, warnings = [], []
-for fname, sample in FILES:
-    for _, cells in parse_file(fname, sample):
-        try:
-            if sample == "global_south":
-                # # | University | Country | Has Policy | Policy page URL | Title | Date | Scope | Note
-                rec = {
-                    "id": f"gs-{cells[0]}",
-                    "sample": sample,
-                    "rank": None,
-                    "university": cells[1],
-                    "country": cells[2] or None,
-                    "official_domain": None,
-                    "has_policy": norm_policy(cells[3]),
-                    "policy_url": cells[4] if cells[4] not in ("—", "-", "") else None,
-                    "page_title": cells[5] or None,
-                    "date_info": cells[6] or None,
-                    "scope": cells[7] or None,
-                    "note": cells[8] or None,
-                }
-            elif sample == "qs_51_100":
-                # # | University | QS 2026 | Policy? | Policy page URL | Page title | Date | Scope | Note
-                rec = {
-                    "id": f"qs-{cells[2].lstrip('=')}",
-                    "sample": sample,
-                    "rank": cells[2],
-                    "university": cells[1],
-                    "country": None,
-                    "official_domain": None,
-                    "has_policy": norm_policy(cells[3]),
-                    "policy_url": cells[4] if cells[4] not in ("—", "-", "") else None,
-                    "page_title": cells[5] or None,
-                    "date_info": cells[6] or None,
-                    "scope": cells[7] or None,
-                    "note": cells[8] or None,
-                }
-            elif sample == "qs_101_150":
-                # QS rank | University | HAS POLICY | Policy page URL | Page title / date | Scope | One-line note
-                # (no official-domain column; page_title and date are combined)
-                rec = {
-                    "id": f"qs-{cells[0].lstrip('=')}",
-                    "sample": sample,
-                    "rank": cells[0],
-                    "university": cells[1],
-                    "country": None,
-                    "official_domain": None,
-                    "has_policy": norm_policy(cells[2]),
-                    "policy_url": cells[3] if cells[3] not in ("—", "-", "") else None,
-                    "page_title": cells[4] or None,
-                    "date_info": None,
-                    "scope": cells[5] or None,
-                    "note": cells[6] or None,
-                }
-            else:
-                # Rank | University | Official domain | HAS POLICY | Policy page URL | Page title | Date | Scope | One-line note
-                rec = {
-                    "id": f"qs-{cells[0].lstrip('=')}",
-                    "sample": sample,
-                    "rank": cells[0],
-                    "university": cells[1],
-                    "country": None,
-                    "official_domain": cells[2] or None,
-                    "has_policy": norm_policy(cells[3]),
-                    "policy_url": cells[4] if cells[4] not in ("—", "-", "") else None,
-                    "page_title": cells[5] or None,
-                    "date_info": cells[6] or None,
-                    "scope": cells[7] or None,
-                    "note": cells[8] or None,
-                }
-        except IndexError:
-            warnings.append(f"{fname}: short row skipped: {cells[:3]}")
+lines = SRC.read_text(encoding="utf-8").splitlines()
+# locate the two tables
+t1_start = next(i for i, l in enumerate(lines) if l.startswith("| # | Country | University | AI policy |"))
+t2_start = next(i for i, l in enumerate(lines) if l.startswith("| # | University | AI programs"))
+
+def parse_table(start):
+    rows = []
+    for line in lines[start:]:
+        if not line.startswith("|"):
+            if rows:
+                break
             continue
-        records.append(rec)
+        cells = split_row(line)
+        if is_header_or_sep(cells):
+            continue
+        rows.append(cells)
+    return rows
 
-# ---- post-processing ----
-import re as _re
-def _first_url(text):
-    if not text:
-        return None
-    m = _re.search(r"https?://\S+", text)
-    return m.group(0).rstrip(").,;") if m else None
+policies, programs = [], []
+for cells in parse_table(t1_start):
+    url_raw = cells[4]
+    policies.append({
+        "id": f"ca-{cells[0]}",
+        "country_code": cells[1],
+        "university": cells[2],
+        "has_policy": norm_policy(cells[3]),
+        "policy_url": first_url(url_raw),
+        "policy_url_raw": url_raw if url_raw not in ("—", "-", "") and url_raw != first_url(url_raw) else None,
+        "note": cells[5] or None,
+    })
+for cells in parse_table(t2_start):
+    url_raw = cells[3] if len(cells) > 3 else ""
+    programs.append({
+        "id": f"ca-p-{cells[0]}",
+        "university": cells[1],
+        "ai_programs": cells[2] or None,
+        "source_url": first_url(url_raw),
+        "source_url_raw": url_raw if url_raw not in ("—", "-", "") and url_raw != first_url(url_raw) else None,
+    })
 
-seen_ids = {}
-for rec in records:
-    raw = rec.get("policy_url")
-    clean = _first_url(raw)
-    rec["policy_url_raw"] = raw if (raw and raw != clean) else None
-    rec["policy_url"] = clean
-    base = rec["id"]
-    if base in seen_ids:
-        seen_ids[base] += 1
-        rec["id"] = f"{base}-{seen_ids[base]}"
-    else:
-        seen_ids[base] = 1
-
-# name overlap flag (same university audited in more than one sample)
-from collections import Counter as _Counter
-_name_counts = _Counter(r["university"].strip().lower() for r in records)
-for rec in records:
-    rec["name_overlap"] = _name_counts[rec["university"].strip().lower()] > 1
-
-# ---- validation ----
+print(f"policy rows: {len(policies)}")
+print(f"program rows: {len(programs)}")
 from collections import Counter
-counts = Counter(r["has_policy"] for r in records)
-per_sample = Counter(r["sample"] for r in records)
-print(f"total rows: {len(records)}")
-print(f"by policy: {dict(counts)}")
-print(f"by sample: {dict(per_sample)}")
-if warnings:
-    print("WARNINGS:")
-    [print(" ", w) for w in warnings]
+print("policy counts:", dict(Counter(p["has_policy"] for p in policies)))
 
-FIELDS = ["id", "sample", "rank", "university", "country", "official_domain",
-          "has_policy", "policy_url", "policy_url_raw", "page_title", "date_info",
-          "scope", "note", "name_overlap"]
-with open(OUT / "ai-policy-audit-2026.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=FIELDS)
-    w.writeheader()
-    w.writerows(records)
-with open(OUT / "ai-policy-audit-2026.json", "w", encoding="utf-8") as f:
+for name, rows, fields in [
+    ("central-asia-ai-policies-2026", policies,
+     ["id", "country_code", "university", "has_policy", "policy_url", "policy_url_raw", "note"]),
+    ("central-asia-ai-programs-2026", programs,
+     ["id", "university", "ai_programs", "source_url", "source_url_raw"]),
+]:
+    with open(OUT / f"{name}.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(rows)
+    print("wrote", name)
+
+with open(OUT / "central-asia-ai-education-audit-2026.json", "w", encoding="utf-8") as f:
     json.dump({
-        "dataset": "Global University AI Policy Audit 2026",
-        "audit_date": "2026-10-14",
+        "dataset": "Central Asia AI Education Audit 2026",
+        "audit_date": "2026-10-17",
         "publisher": "Study Intelligence (aclas.si)",
         "license": "CC-BY-4.0",
-        "records": records,
+        "ai_policies": policies,
+        "ai_programs": programs,
     }, f, ensure_ascii=False, indent=2)
-print("wrote csv + json")
+print("wrote json")
