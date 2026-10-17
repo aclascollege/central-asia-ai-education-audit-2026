@@ -1,48 +1,36 @@
-# US Carnegie R1 AI Policy Audit 2026
+# Central Asia AI Education Audit 2026
 
-> Open dataset: all 187 US Carnegie R1 research universities (2025 Carnegie
-> Classification), audited for whether each publishes official AI usage
-> guidance on its own domain.
-> By Study Intelligence (https://aclas.si). License: CC-BY-4.0.
-> Snapshot: 2026-10-17.
+> Open dataset: 31 leading universities across Kazakhstan, Kyrgyzstan,
+> Uzbekistan, Tajikistan and Turkmenistan, audited for (a) public AI usage
+> policy and (b) AI degree programs/courses offered.
+---
+> By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) — https://aclas.si. License: CC-BY-4.0.
+> Snapshot: 2026-10-14.
 
-## What question does this answer?
+## What questions does this answer?
 
-Has each US R1 university published official AI usage guidance or policy?
-Each YES was verified by opening the policy page on the university's own
-official domain.
+1. Does the university publish a public, university-level AI usage policy?
+2. What AI-related degree programs or courses does it verifiably offer?
 
 ## Key findings
 
-- 178 of 187 (95.2%) publish verifiable AI guidance.
-- 1 confirmed NO: University of Wyoming.
-- 8 UNCLEAR (could not verify, not proven absent): Brown, Clemson,
-  UT Health San Antonio, UT Southwestern, UMass-Boston, Miami, UNH,
-  Weill Cornell Medicine.
-- The US research sector has standardized on governing AI, not banning it.
+- 6 of 31 (19%) publish a verifiable public AI policy — 4 of 6 are Kazakh.
+- 18 of 31 (58%) offer a verifiable AI-named degree program or AI course
+  portfolio: institutions teach AI ~3x faster than they govern it.
+- Zero campus-wide AI bans.
+- Turkmenistan and Tajikistan are near-complete blind spots (0 of 7).
+- 81% UNVERIFIABLE rate — a finding about transparency as much as adoption.
 
 ## Files
 
-- `us-r1-ai-policy-audit-2026.csv` / `.json` — 187 rows, one per university
-- `METHODOLOGY.md` — definitions, verification rules, caveats
-- `AUDIT-LOG.md` — source list, corrections, least-sure rows
-- `raw/` — 16 audited batch tables + 2 fix files (provenance)
+- `central-asia-ai-policies-2026.csv` — 31 rows: AI policy per university
+- `central-asia-ai-programs-2026.csv` — 31 rows: AI programs/courses
+- `central-asia-ai-education-audit-2026.json` — both tables + metadata
+- `METHODOLOGY.md` — sample selection, definitions, caveats
 - `parse.py` — exact script that generated CSV/JSON
 - `CITATION.cff` — machine-readable citation
 
-## Columns (CSV)
-
-`id`, `university`, `official_domain`, `has_policy` (YES / NO / UNCLEAR),
-`policy_url` (confirmed live 2026-10-17), `page_title`, `date_info`,
-`scope` (students / faculty-teaching / all-community), `note`.
-
-## Caveats
-
-- ~30 rows are "soft YES" (guidance-level vs formal policy, crawl-only
-  confirmation) — flagged in `AUDIT-LOG.md`.
-- Snapshot 2026-10-17; policies change — verify before citing a row.
-
 ## Citation
 
-Study Intelligence (https://aclas.si). "US Carnegie R1 AI Policy Audit
-2026" (v1.0.0, 2026-10-17). CC-BY-4.0.
+Study Intelligence (https://aclas.si). "Central Asia AI Education Audit
+2026" (v1.0.0, 2026-10-14). CC-BY-4.0.
