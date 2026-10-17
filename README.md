@@ -8,6 +8,40 @@ Uzbekistan, Tajikistan and Turkmenistan**, audited on two questions:
 (a) does it publish a public, university-level AI usage policy?
 (b) what AI-related degree programs or courses does it offer?
 
+
+## In plain English
+
+**What is this?** A report card for 31 leading universities in Kazakhstan,
+Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan on two questions: *do
+they publish AI rules?* and *do they teach AI?*
+
+**The headline:**
+
+![Central Asia: governing AI vs teaching AI](chart-central-asia.png)
+
+Schools are teaching AI **three times faster** than they're writing rules
+for it (58% offer AI programs vs 19% with a policy). And four of the six
+schools *with* policies are in Kazakhstan — Turkmenistan and Tajikistan are
+near-complete blind spots.
+
+## Try it (30 seconds)
+
+```python
+import pandas as pd
+df = pd.read_csv("central-asia-ai-policies-2026.csv")
+print(df["has_policy"].value_counts())
+```
+
+## FAQ
+
+**Why Central Asia?** It's the least-measured region in global AI-education
+research. English-only surveys systematically miss it — this audit searched
+in Russian and local languages too.
+
+**What does UNVERIFIABLE mean?** We couldn't confirm a policy on the public
+web — often because sites are down, login-walled, or crawler-blocked. It's
+a finding about *transparency*, not just adoption.
+
 ## Headline numbers
 
 - **6 of 31 (19%)** publish a verifiable public AI usage policy on their official
