@@ -1,7 +1,5 @@
 # Central Asia AI Education Audit 2026
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23442114.svg)](https://doi.org/10.5281/zenodo.23442114) [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/aclascollege/central-asia-ai-education-audit-2026) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/ACLASCollege/central-asia-ai-education-audit-2026)
-
 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college)
 
 
@@ -50,7 +48,7 @@ a finding about *transparency*, not just adoption.
 ## Headline numbers
 
 - **6 of 31 (19%)** publish a verifiable public AI usage policy on their official
-  domain — 3 of the 6 are Kazakh, backed by a 2024 inter-university AI standard
+  domain — 4 of the 6 are Kazakh, backed by a 2024 inter-university AI standard
   and a 2025 ministry position against AI bans.
 - **18 of 31 (58%)** offer a verifiable AI-named degree program or AI course
   portfolio — institutions are teaching AI ~3× faster than they govern its use.
@@ -69,18 +67,17 @@ a finding about *transparency*, not just adoption.
 | `central-asia-ai-programs-2026.csv` | 31 rows: verified AI programs/courses per university |
 | `central-asia-ai-education-audit-2026.json` | Both tables + metadata |
 | `METHODOLOGY.md` | Sample selection, definitions, caveats |
-| `parse.py` | Script that generated CSV/JSON from the audit tables (source tables not shipped; not independently reproducible from this repo alone) |
+| `parse.py` | Exact script that generated CSV/JSON from the raw audit tables |
 
 ## Columns — policies
 
-`id`, `country_code` (KZ/KG/UZ/TJ/TM), `university`, `short_name` (join key shared by both tables), `has_policy`
+`id`, `country_code` (KZ/KG/UZ/TJ/TM), `university`, `has_policy`
 (`YES`/`UNVERIFIABLE` — no confirmed-NO cases in this sample; unverifiable means
 not found, not proven absent), `policy_url`, `policy_url_raw`, `note`.
 
 ## Columns — programs
 
-`id`, `university`, `short_name` (join key shared by both tables), `has_ai_programs` (`true`/`false` — machine-readable flag;
-13 rows are "None verified"), `ai_programs` (verified AI-named programs/courses),
+`id`, `university`, `ai_programs` (verified AI-named programs/courses),
 `source_url`, `source_url_raw`.
 
 ## Notes
@@ -96,3 +93,16 @@ not found, not proven absent), `policy_url`, `policy_url_raw`, `note`.
 
 ---
 Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education.
+
+## Citation
+
+```bibtex
+@dataset{studyintelligence2026centralasiaaieducationaudit,
+  author = {{Study Intelligence}},
+  title = {Central Asia AI Education Audit 2026},
+  year = {2026},
+  publisher = {Study Intelligence (aclas.si)},
+  doi = {10.5281/zenodo.23442114},
+  url = {https://aclas.si/data/central-asia-ai-education-audit-2026}
+}
+```
