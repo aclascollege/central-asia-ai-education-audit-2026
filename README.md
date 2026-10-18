@@ -1,4 +1,5 @@
 # Central Asia AI Education Audit 2026
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23442114.svg)](https://doi.org/10.5281/zenodo.23442114)
 
 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college)
 
